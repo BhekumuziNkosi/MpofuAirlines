@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mpofu Airlines | Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #3f414e;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #002244;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    nav a.active::after {
+      content: " →";
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      color: #ffffff;
+      margin-top: 40px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 65%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #575668;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    form label {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: #e0e0e0;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #888;
+      font-size: 1rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0097a7;
+    }
+
+    .error,
+    .success {
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .error {
+      color: #ff5252;
+    }
+
+    .success {
+      color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="MpofuAirlinesInfo.html">Home</a>
+    <a href="MpofuAirlinesInfo.html#book">Book a Flight</a>
+    <a href="error page.html">Contact</a>
+    <a href="abouuss-1.html">About Us</a>
+    <a href="#Form" class="active">LogIn</a>
+  </nav>
+
+  <h1><b>Mpofu Airlines - "Glide beyond limits."</b></h1>
+  <img src="Logo.jpg" alt="Mpofu Airlines Logo" />
+
+  <div id="Form" class="container">
+    <form id="loginForm" onsubmit="return validateForm()">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" />
+
+      <input type="submit" value="Submit" />
+
+      <p class="error" id="errorMessage"></p>
+      <p class="success" id="successMessage"></p>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const errorMessage = document.getElementById('errorMessage');
+      const successMessage = document.getElementById('successMessage');
+
+      errorMessage.textContent = '';
+      successMessage.textContent = '';
+
+      if (email === '' || password === '') {
+        errorMessage.textContent = 'Please fill in both fields!';
+        return false;
+      }
+
+      if (!email.includes('@') || !email.includes('.')) {
+        errorMessage.textContent = 'Enter a valid email address!';
+        return false;
+      }
+
+      // Simulate successful submission and redirect
+      successMessage.textContent = 'Redirecting...';
+      setTimeout(() => {
+        window.location.href = 'error page.html'; // or 404.html
+      }, 1000);
+
+      return false; // prevent actual form submission
+    }
+  </script>
+</body>
+</html>

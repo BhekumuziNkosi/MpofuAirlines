@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MpofuAirlines - About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .bkk {
+      margin-top: 200px;
+      width: 150px;
+      height: 500px;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 1%;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #002244;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+    }
+
+    nav a.active::after {
+      content: " →";
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('airport-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      flex-direction: column;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    u {
+      color: #002244;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .social-icons {
+      margin: 15px 0;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    
+
+    .gallery-item p {
+      margin-top: 8px;
+      font-weight:600;
+      color: #333;
+    }
+
+   
+
+    .footer-text {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+   
+    #cookiePopup {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #fff;
+      padding: 15px 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      display: none;
+      z-index: 999;
+    }
+
+    #cookiePopup button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .hero-section {
+  background-image: url('WhatsApp.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight:bolder;
+  font-size:250%;
+  position: relative;
+  color: white;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+
+  a:link {
+    color: blue; 
+  }
+
+  a:visited {
+    color: purple; 
+  }
+
+  a:hover {
+    color: red; 
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: green;
+  }
+
+
+.hero-content {
+  z-index: 2;
+  position: relative;
+  max-width: 800px;
+  padding: 20px;
+}
+
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body id="MpofuAirlinesAbout.html">
+
+  <header>About MpofuAirlines</header>
+
+  <nav>
+    <a href="MpofuAirlinesInfo.html">Home</a>
+    <a href="MpofuAirlinesInfo.html#book">Book a Flight</a>
+  
+   <a href="error page.html">Contact</a>
+    <a href="MpofuAirlinesLogin-1.html">LogIn</a>
+    <a href="#" class="active">About Us</a>
+  </nav>
+
+  <section class="hero-section">
+  <div class="hero-content">
+    Discover Who We Are<br>"Flying the world, led by vision."
+  </div></section>
+
+  <div class="container">
+    <h2><u>Our Story</u></h2><br>
+    <p>
+      MpofuAirlines is a world-class international airline proudly based in South Africa.
+      Founded and led by <strong>Bhekumuzi Nkosisiza Mpofu</strong>, the visionary CEO and owner, we are committed to
+      delivering top-tier local and international air travel experiences.
+    </p><br>
+    <p>
+      <a href="MpofuAirlinesInfo.html#fleet-section"><b>Our fleet</b></a> and service are built around comfort, safety, and luxury. From sunny South Africa to global destinations like 
+      <strong>Dubai</strong>, <strong>USA</strong>, <strong>Chicago</strong>, <strong>France</strong>, <strong>South Africa</strong>, <strong>Zimbabwe</strong>, <strong>Australia</strong>, and <strong>UK</strong> 
+      we got your travel dreams covered!
+    </p><br>
+
+    <h2><u>Explore Our Destinations</u></h2><br>
+    <div class="gallery">
+     <div class="gallery-item"><a href="https://en.wikipedia.org/wiki/Dubai" ><img src="dubai.jpg" alt="Dubai" /></a>
+    <p><u>Dubai</u></p></div>
+     <div class="gallery-item"><a href="https://en.wikipedia.org/wiki/United_States" ><img src="usa.jpg" alt="USA"/></a><p><u>USA</u></p></div>
+      <div class="gallery-item"><a href="https://en.wikipedia.org/wiki/Australia" ><img src="australia.jpg" alt="Australia" /></a><p><u>Australia</u></p></div>
+        <div class="gallery-item"><a href="https://en.wikipedia.org/wiki/France" ><img src="france.jpg" alt="France" /></a><p><u>France</u></p></div>
+          <div class="gallery-item"><a href="https://en.wikipedia.org/wiki/Canada" ><img src="canada.jpg" alt="Canada" /></a><p><u>Canada</u></p></div>
+            <div class="gallery-item"><a href="https://en.wikipedia.org/wiki/United_Kingdom" ><img src="uK.jpg" alt="UK"/></a><p><u>UK</u><P></div>
+              <div class="gallery-item"><a href="https://en.wikipedia.org/wiki/South_Africa" ><img src="cape Town.jpg" alt="Cape Town"/></a><p><u>Cape Town(South Africa)</u><p></div>
+                <div class="gallery-item"><a href="https://en.wikipedia.org/wiki/Zimbabwe" ><img src="zimbabwe.jpg" alt="Zimbabwe"/></a></a><p><u>Vic Falls(Zimbabwe)</u><p></div>
+      
+    </div>
+  </div><br>
+
+  <footer>
+    <div class="social-icons">
+      <i href="#" class="fa-brands fa-x-twitter fa-2x" alt="Twitter" ></i>
+      <i href="#" class="fa-brands fa-tiktok fa-2x" alt="Tiktok" ></i>
+      <i href="#" class="fa-brands fa-telegram fa-2x" alt="Telegram" ></i>
+      <i href="#" class="fa-brands fa-snapchat fa-2x" alt="Snapchat" ></i>
+      <i href="#" class="fa-brands fa-instagram  fa-2x "    alt="Instagram"></i>
+      <i href="#" class="fa-brands fa-facebook-f fa-2x" alt="Facebook" ></i>
+    </div><br>
+    <div class="footer-text">
+      Address: Westland, Florida, South Africa<br />
+      <a href="#" style="color: white;">Terms & Conditions</a><br />
+      &copy; 2025 MpofuAirlines. All Rights Reserved.
+    </div>
+  </footer>
+
+  <div id="cookiePopup">
+    We use cookies to give you the best experience on our site.
+    <br/>
+    <button onclick="acceptCookies()">Got it!</button>
+  </div>
+
+  <script>
+    
+    const links = document.querySelectorAll("nav a");
+    const currentPage = location.href;
+
+    links.forEach(link => {
+      if (currentPage.includes(link.getAttribute("href"))) {
+        links.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+      }
+    });
+
+    
+    function acceptCookies() {
+      localStorage.setItem("cookiesAccepted", "true");
+      document.getElementById("cookiePopup").style.display = "none";
+    }
+
+    window.onload = () => {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookiePopup").style.display = "block";
+      }
+    };
+  </script>
+
+</body>
+</html>

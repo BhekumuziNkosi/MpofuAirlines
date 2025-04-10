@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 Not Found - MpofuAirlines</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #002244;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .container img {
+      width: 300px;
+      max-width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .container h1 {
+      font-size: 36px;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+    nav a.active::after {
+      content: " →";
+      font-weight: bold;
+    }
+
+    .container p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    #cookiePopup, #redirectPopup {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+    a:link {
+    color: blue;
+  }
+
+  a:visited {
+    color: purple; 
+  }
+
+  a:hover {
+    color: red; 
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: green;
+  }
+
+
+    #cookiePopup button, #redirectPopup button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      margin-top: 10px;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>MpofuAirlines</header>
+
+  <nav>
+    <a href="MpofuAirlinesInfo.html">Home</a>
+    <a href="MpofuAirlinesInfo.html#book">Book a Flight</a>
+    <a href="abouuss-1.html">About Us</a>
+    <a href="error page.html" class="active">Contact</a>
+    <a href="MpofuAirlinesLogin-1.html">LogIn</a>
+  </nav>
+
+  <div class="container">
+    <h1>Oops! This page is not responding.</h1>
+    <p>This page is no longer existing or is not responding.</p>
+    <p>Please contact us for any assistance if it does not respond within 5min.</p>
+    <div class="contact-info">
+      Email: <a href="mailto:support@mpofuairlines.com">support@mpofuairlines.com</a><br/>
+      Phone: +27 10 555 1234/+27 011 25 3615<br/>
+      Address: 448 1st Avenue, Westrand, Florida, South Africa
+    </div>
+  <video width="600" autoplay loop muted playsinline alt="Surprise GIF">
+    <source src="gif.mp4" type="video/mp4">Your browser does not support this video tag!</video>
+  </div>
+
+  <footer>
+    <footer>
+        <div class="social-icons">
+            <i href="#" class="fa-brands fa-x-twitter fa-2x" alt="Twitter" ></i>
+            <i href="#" class="fa-brands fa-tiktok fa-2x" alt="Tiktok" ></i>
+            <i href="#" class="fa-brands fa-telegram fa-2x" alt="Telegram" ></i>
+            <i href="#" class="fa-brands fa-snapchat fa-2x" alt="Snapchat" ></i>
+            <i href="#" class="fa-brands fa-instagram  fa-2x "    alt="Instagram"></i>
+            <i href="#" class="fa-brands fa-facebook-f fa-2x" alt="Facebook" ></i>
+          </div><br>
+          <div class="footer-text">
+            Address: 448 1st Avenue,Westrand, Florida, South Africa<br />
+            <a href="#" style="color: white;">Terms & Conditions</a><br />
+            &copy; 2025 MpofuAirlines. All Rights Reserved.
+          </div>
+        
+    </footer>
+  </footer>
+
+  
+  <div id="cookiePopup">
+    We use cookies to give you the best experience on our site.
+    <br/>
+    <button onclick="acceptCookies()">Got it!</button>
+  </div>
+
+  
+  <div id="redirectPopup">
+    <span style="font-size: 20px;">This page isn't working <span style="font-size: 24px;">😢</span></span><br/>
+    Do you want to go back to the home page?<br/>
+    <button onclick="goHome()">Yes</button>
+    <button onclick="stayHere()">No</button>
+  </div>
+
+  <script>
+   
+    function acceptCookies() {
+      localStorage.setItem("cookiesAccepted", "true");
+      document.getElementById("cookiePopup").style.display = "none";
+    }
+
+    window.onload = () => {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookiePopup").style.display = "block";
+      }
+
+      
+      setTimeout(() => {
+        document.getElementById("redirectPopup").style.display = "block";
+      }, 3000);
+    };
+
+    function goHome() {
+      window.location.href = "MpofuAirlinesInfo.html";
+    }
+
+    function stayHere() {
+      document.getElementById("redirectPopup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
